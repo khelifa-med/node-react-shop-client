@@ -1,66 +1,82 @@
 [
     {
-        "name": "Sofa",
-        "image": "./img/Category/images/01.svg"
+      "name": "Sofa",
+      "image": "./img/Category/images/01.svg",
+      "category": "Living Room"
     },
     {
-        "name": "TV Cabinet",
-        "image": "./img/Category/images/02.svg"
+      "name": "TV Cabinet",
+      "image": "./img/Category/images/02.svg",
+      "category": "Living Room"
     },
     {
-        "name": "Dining",
-        "image": "./img/Category/images/03.svg"
+      "name": "Dining",
+      "image": "./img/Category/images/03.svg",
+      "category": "Living Room"
     },
     {
-        "name": "Wordrobe",
-        "image": "./img/Category/images/04.svg"
+      "name": "Wordrobe",
+      "image": "./img/Category/images/04.svg",
+      "category": "Bedroom"
     },
     {
-        "name": "Bed",
-        "image": "./img/Category/images/05.svg"
+      "name": "Bed",
+      "image": "./img/Category/images/05.svg",
+      "category": "Bedroom"
     },
     {
-        "name": "Dressing Table",
-        "image": "./img/Category/images/06.svg"
+      "name": "Dressing Table",
+      "image": "./img/Category/images/06.svg",
+      "category": "Bedroom"
     },
     {
-        "name": "Door",
-        "image": "./img/Category/images/07.svg"
+      "name": "Door",
+      "image": "./img/Category/images/07.svg",
+      "category": "Home Structure"
     },
     {
-        "name": "Divan",
-        "image": "./img/Category/images/08.svg"
+      "name": "Divan",
+      "image": "./img/Category/images/08.svg",
+      "category": "Living Room"
     },
     {
-        "name": "Office",
-        "image": "./img/Category/images/09.svg"
+      "name": "Office",
+      "image": "./img/Category/images/09.svg",
+      "category": "Home Structure"
     },
     {
-        "name": "Kitchen",
-        "image": "./img/Category/images/10.svg"
+      "name": "Kitchen",
+      "image": "./img/Category/images/10.svg",
+      "category": "Home Structure"
     },
     {
-        "name": "Lamp",
-        "image": "./img/Category/images/11.svg"
+      "name": "Lamp",
+      "image": "./img/Category/images/11.svg",
+      "category": "Living Room"
     },
     {
-        "name": "Reading Table",
-        "image": "./img/Category/images/12.svg"
+      "name": "Reading Table",
+      "image": "./img/Category/images/12.svg",
+      "category": "Living Room"
     },
     {
-        "name": "Mattress",
-        "image": "./img/Category/images/13.svg"
+      "name": "Mattress",
+      "image": "./img/Category/images/13.svg",
+      "category": "Bedroom"
     },
     {
-        "name": "Chest Drawers",
-        "image": "./img/Category/images/14.svg"
+      "name": "Chest Drawers",
+      "image": "./img/Category/images/14.svg",
+      "category": "Bedroom"
     },
     {
-        "name": "Windows",
-        "image": "./img/Category/images/15.svg"
+      "name": "Windows",
+      "image": "./img/Category/images/15.svg",
+      "category": "Home Structure"
     },
     {
-        "name": "Miscellaneous",
-        "image": "./img/Category/images/16.svg"
+      "name": "Miscellaneous",
+      "image": "./img/Category/images/16.svg",
+      "category": "Home Structure"
     }
-]
+  ]

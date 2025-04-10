@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { RiShoppingCartLine } from "react-icons/ri";
-import { FaRegHeart } from "react-icons/fa6";
+
+import CartOffset from '../4_ShopPage/CartOffSet';
+import WishlistOffSet from '../4_ShopPage/WishlistOffSet';
 
 export default function Navebar() {
     const navbarLinks = [
@@ -10,8 +11,8 @@ export default function Navebar() {
             href: '/',
         },
         {
-            text: 'Products',
-            href: '/products',
+            text: 'Shop',
+            href: '/shop',
         },
         {
             text: 'About Us',
@@ -43,8 +44,8 @@ export default function Navebar() {
                     </ul>
                 </div>
                 <div className="flex-1 text-xl gap-2 flex justify-end items-center">
-                    <FaRegHeart />
-                    <RiShoppingCartLine />
+                    <WishlistOffSet />
+                    <CartOffset/>
 
                 </div>
             </div>
