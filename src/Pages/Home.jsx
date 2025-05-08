@@ -25,10 +25,10 @@ export default function Home() {
           <hr className="border-t-2 mx-10 border-gray-300" />
         </div>
         <BestSeller />
-        <div className="my-8">
+        {/* <div className="my-8">
           <hr className="border-t-2 mx-10 border-gray-300" />
         </div>
-        <Blogs />
+        <Blogs /> */}
         <div className="my-8">
           <hr className="border-t-2 mx-10 border-gray-300" />
         </div>

@@ -5,9 +5,13 @@ import Home from './Pages/Home'
 import Navebar from './Components/1_Navbar/Navebar'
 import Footer from './Components/3_Footer/Footer'
 import Shop from './Pages/Shop'
+import Cart from './Pages/Cart'
+import Checkout from './Pages/Checkout'
+import Order_complete from './Pages/Order_complete'
+import ProductDetails from './Pages/ProductDetails'
 
 function App() {
-
+  const [order, setOrder] = useState(null)
   return (
     <Router>
       <div className="">
@@ -16,10 +20,10 @@ function App() {
 
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
-          {/* <Route path="/about" element={<div>About</div>} />
-          <Route path="/contact" element={<div>Contact</div>} />
-          <Route path="/services" element={<div>Services</div>} />
-          <Route path="/products" element={<div>Products</div>} /> */}
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout setOrder={setOrder} />} />
+          <Route path="/order-complete" element={<Order_complete order={order} />} />
+          <Route path="/product/:productId" element={<ProductDetails />} />
         </Routes>
 
         <Footer />

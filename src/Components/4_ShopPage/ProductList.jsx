@@ -1,37 +1,39 @@
-import React, { useState } from 'react';
-import products from '../../../public/img/Products/products.json';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { fetchProducts } from '../../Redux-toolkit/Slices/ProductsSlice';
 import ProductCard from '../2_Home/ProductCard';
-import SortDropDown from './SortDropDown';
 
 export default function ProductList() {
-    // State to manage the sorted products
-    const [sortedProducts, setSortedProducts] = useState(products);
+    const dispatch = useDispatch();
 
-    // Function to handle sorting
-    const handleSortProducts = (sorted) => {
-        setSortedProducts(sorted);
-    };
+    // Get filtered products and status from the Redux store
+    const products = useSelector((state) => state.products.filteredItems);
+    const status = useSelector((state) => state.products.status);
+    const error = useSelector((state) => state.products.error);
+
+    // Fetch products when the component mounts
+    useEffect(() => {
+        if (status === 'idle') {
+            dispatch(fetchProducts());
+        }
+    }, [dispatch, status]);
 
     return (
-        <div className='w-full flex flex-col justify-center items-center bg-gray-100'>
-            {/* Sort Dropdown */}
-            <div className="flex justify-end items-center w-full px-10 py-5">
-                <SortDropDown
-                    products={products}
-                    sortProducts={handleSortProducts}
-                />
-            </div>
-
+        <div className="w-full flex flex-col justify-center items-center bg-gray-100">
             {/* Product Grid */}
             <div className="w-full flex flex-col justify-center items-center py-10">
-                <div className="grid grid-cols-4 gap-4 justify-center items-start w-full px-10">
-                    {sortedProducts.map((item) => (
-                        <ProductCard
-                            key={item.id}
-                            product={item} // Pass the entire product object
-                        />
-                    ))}
-                </div>
+                {status === 'loading' && <p>Loading products...</p>}
+                {status === 'failed' && <p className="text-red-500">Error: {error}</p>}
+                {status === 'succeeded' && (
+                    <div className="grid grid-cols-4 gap-4 justify-center items-start w-full px-10">
+                        {products.map((item) => (
+                            <ProductCard
+                                key={item.id}
+                                product={item} // Pass the entire product object
+                            />
+                        ))}
+                    </div>
+                )}
             </div>
         </div>
     );

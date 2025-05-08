@@ -1,9 +1,6 @@
-// This file contains the Redux slice for managing product data.
-// It includes an async thunk for fetching products from an API and reducers for handling the state.
-// It uses Redux Toolkit's createSlice and createAsyncThunk for easier state management.
-// Description: This file contains the Redux slice for managing product data in a React application.
-// It includes an async thunk for fetching products from an API and reducers for handling the state.
-// It uses Redux Toolkit's createSlice and createAsyncThunk for easier state management.
+// This file contains the Redux slice for managing product data for display.
+// It includes an async thunk for fetching products from an API and reducers for handling sorting,
+// pagination, and searching. It uses Redux Toolkit's createSlice and createAsyncThunk.
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -12,10 +9,11 @@ export const fetchProducts = createAsyncThunk(
     'products/fetchProducts',
     async (_, thunkAPI) => {
         try {
-            const response = await axios.get('/api/products');
+            const response = await axios.get('../../../public/img/Products/products.json');
             return response.data;
         } catch (error) {
-            return thunkAPI.rejectWithValue(error.response.data);
+            console.log(error.response.data);
+            return thunkAPI.rejectWithValue(error.response?.data || error.message); // Return error for handling in rejected case
         }
     }
 );
@@ -23,12 +21,21 @@ export const fetchProducts = createAsyncThunk(
 const productsSlice = createSlice({
     name: 'products',
     initialState: {
-        items: [],
-        status: 'idle', // 'idle' | 'loading' | 'succeeded' | 'failed'
+        items: [], // All products
+        filteredItems: [], // Filtered products based on search
+        status: 'idle',
+        searchTerm: '',
         error: null,
     },
     reducers: {
-        // Add your reducers here if needed
+        searchProducts: (state, action) => {
+            const searchTerm = action.payload.toLowerCase();
+            state.searchTerm = searchTerm;
+            state.filteredItems = state.items.filter((item) =>
+                item.name.toLowerCase().includes(searchTerm) ||
+                item.description.toLowerCase().includes(searchTerm)
+            );
+        }
     },
     extraReducers: (builder) => {
         builder
@@ -38,6 +45,7 @@ const productsSlice = createSlice({
             .addCase(fetchProducts.fulfilled, (state, action) => {
                 state.status = 'succeeded';
                 state.items = action.payload;
+                state.filteredItems = action.payload; // Initialize filteredItems with all products
             })
             .addCase(fetchProducts.rejected, (state, action) => {
                 state.status = 'failed';
@@ -46,4 +54,5 @@ const productsSlice = createSlice({
     },
 });
 
+export const { searchProducts, setProducts } = productsSlice.actions;
 export default productsSlice.reducer;

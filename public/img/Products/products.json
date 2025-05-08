@@ -7,9 +7,9 @@
     "price": 49.99,
     "category": "Lamps",
     "images": [
-      "./img/Products/images/Product01/1.jpg",
-      "./img/Products/images/Product01/2.jpg",
-      "./img/Products/images/Product01/3.jpg"
+      "/img/Products/images/Product01/1.jpg",
+      "/img/Products/images/Product01/2.jpg",
+      "/img/Products/images/Product01/3.jpg"
     ],
     "reviews": [
       {
@@ -27,14 +27,14 @@
   {
     "id": 2,
     "name": "Modern Coffee Table",
-    "slug": "modern_coffee table",
+    "slug": "modern_coffee_table",
     "description": "This modern coffee table is a perfect blend of style and functionality. With its sleek glass top and sturdy wooden legs, it adds a contemporary touch to your living room. The spacious tabletop offers plenty of room for books, magazines, or decor items, while the lower shelf provides additional storage space. Whether you're enjoying a cup of coffee or entertaining guests, this table is both practical and stylish.",
     "price": 159.99,
     "category": "Tables",
     "images": [
-      "./img/Products/images/Product02/1.jpg",
-      "./img/Products/images/Product02/2.jpg",
-      "./img/Products/images/Product02/3.jpg"
+      "/img/Products/images/Product02/1.jpg",
+      "/img/Products/images/Product02/2.jpg",
+      "/img/Products/images/Product02/3.jpg"
     ],
     "reviews": [
       {
@@ -57,9 +57,9 @@
     "price": 249.99,
     "category": "Chairs",
     "images": [
-      "./img/Products/images/Product03/1.jpg",
-      "./img/Products/images/Product03/2.jpg",
-      "./img/Products/images/Product03/3.jpg"
+      "/img/Products/images/Product03/1.jpg",
+      "/img/Products/images/Product03/2.jpg",
+      "/img/Products/images/Product03/3.jpg"
     ],
     "reviews": [
       {
@@ -82,9 +82,9 @@
     "price": 399.99,
     "category": "Dressers",
     "images": [
-      "./img/Products/images/Product04/1.jpg",
-      "./img/Products/images/Product04/2.jpg",
-      "./img/Products/images/Product04/3.jpg"
+      "/img/Products/images/Product04/1.jpg",
+      "/img/Products/images/Product04/2.jpg",
+      "/img/Products/images/Product04/3.jpg"
     ],
     "reviews": [
       {
@@ -107,9 +107,9 @@
     "price": 299.99,
     "category": "Cots",
     "images": [
-      "./img/Products/images/Product05/1.jpg",
-      "./img/Products/images/Product05/2.jpg",
-      "./img/Products/images/Product05/3.jpg"
+      "/img/Products/images/Product05/1.jpg",
+      "/img/Products/images/Product05/2.jpg",
+      "/img/Products/images/Product05/3.jpg"
     ],
     "reviews": [
       {
@@ -132,9 +132,9 @@
     "price": 129.99,
     "category": "Night Stands",
     "images": [
-      "./img/Products/images/Product06/1.jpg",
-      "./img/Products/images/Product06/2.jpg",
-      "./img/Products/images/Product06/3.jpg"
+      "/img/Products/images/Product06/1.jpg",
+      "/img/Products/images/Product06/2.jpg",
+      "/img/Products/images/Product06/3.jpg"
     ],
     "reviews": [
       {
@@ -157,9 +157,9 @@
     "price": 899.99,
     "category": "Sofas",
     "images": [
-      "./img/Products/images/Product07/1.jpg",
-      "./img/Products/images/Product07/2.jpg",
-      "./img/Products/images/Product07/3.jpg"
+      "/img/Products/images/Product07/1.jpg",
+      "/img/Products/images/Product07/2.jpg",
+      "/img/Products/images/Product07/3.jpg"
     ],
     "reviews": [
       {
@@ -182,9 +182,9 @@
     "price": 249.99,
     "category": "Shelves",
     "images": [
-      "./img/Products/images/Product08/1.jpg",
-      "./img/Products/images/Product08/2.jpg",
-      "./img/Products/images/Product08/3.jpg"
+      "/img/Products/images/Product08/1.jpg",
+      "/img/Products/images/Product08/2.jpg",
+      "/img/Products/images/Product08/3.jpg"
     ],
     "reviews": [
       {
@@ -207,9 +207,9 @@
     "price": 89.99,
     "category": "Chairs",
     "images": [
-      "./img/Products/images/Product09/1.jpg",
-      "./img/Products/images/Product09/2.jpg",
-      "./img/Products/images/Product09/3.jpg"
+      "/img/Products/images/Product09/1.jpg",
+      "/img/Products/images/Product09/2.jpg",
+      "/img/Products/images/Product09/3.jpg"
     ],
     "reviews": [
       {
@@ -232,9 +232,9 @@
     "price": 69.99,
     "category": "Lamps",
     "images": [
-      "./img/Products/images/Product10/1.jpg",
-      "./img/Products/images/Product10/2.jpg",
-      "./img/Products/images/Product10/3.jpg"
+      "/img/Products/images/Product10/1.jpg",
+      "/img/Products/images/Product10/2.jpg",
+      "/img/Products/images/Product10/3.jpg"
     ],
     "reviews": [
       {
